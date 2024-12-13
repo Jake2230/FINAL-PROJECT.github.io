@@ -1,0 +1,368 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    font-family:'Times New Roman', Times, serif;
+    
+
+}
+html{
+    font-size:62.5%;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url("gal.jpg");
+    color: white;
+    
+}
+header{
+    margin-top:20px;
+    position: fixed;
+    top:0;
+    left:0;
+    width :100%;
+    padding:1rem 9%;
+    background-color:transparent;
+    filter: drop-shadow(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+}
+p{
+    font-size: 16;
+}
+.logo{
+    font-size: 3rem;
+    color:aqua;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+
+}
+.logo:hover{
+    transform:scale(1.1);
+
+}
+nav a{
+    font-size: 1.8rem;
+    color:azure;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom:3px solid transparent;
+}
+
+nav a:hover,
+nav a:active{
+    color: aqua;
+    border-bottom: 3px solid aqua;
+}
+    
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 40%;
+        border-left: 3px solid aqua;
+        border-bottom: 3px solid aqua;
+        border-top-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: blue;
+        border-top: 0.1rem solid blue;
+
+    }
+    nav.active{
+        display:block;
+    }
+    nav a{
+        display: block;
+        font-size:2rem;
+        margin:3rem 0;
+
+    }
+    nav a:hover,
+    nav a.active{
+        padding:1rem;
+        border-radius:0.5rem;
+        border-bottom:0.5s;
+
+    }
+}
+section{
+    min-height: 100vh;
+    padding:5rem 9% 5rem;
+
+}
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+    background-image: url("bg.gif");
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center; 
+
+
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height:1.3;
+
+}
+.home-context h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-img{
+	border-radius: 50%;
+
+}
+.home-img img{
+	position: relative;
+	width: 45vh;
+	border-radius: 50%;
+    box-shadow: 0 0 25px solid aqua;
+    cursor:pointer;
+    transition:0.2s linear;
+
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+
+}
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items: center;
+    width:4rem;
+    height:4rem;
+    background-color: transparent;
+    border: 0.2rem solid aqua;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    transition:0.3s ease;
+}
+.social-icons a:hover{
+    color: rgb(0, 195, 255);
+    transform: scale(1.3) translateY(5px);
+    background-color: #0a00cc;
+    box-shadow:0 0 25px aquamarine;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem; 
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    color: white; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 50px; 
+    box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3); 
+    transition: all 0.3s ease; 
+}
+
+.btn:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 12px 20px rgba(0, 114, 255, 0.5); 
+    background: linear-gradient(135deg, #470165, #cb3de4); 
+}
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    
+    position: relative;
+   
+}
+
+.typing-text span::before {
+    content: "Student";
+    color: rgb(255, 255, 255);
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgb(0, 0, 0);
+    right: -8px; /* Corrected missing unit */
+    animation: cursor 0.6s infinite;
+}
+
+/* Typing Cursor Animation */
+@keyframes cursor {
+    0%, 100% {
+        border-left: 3px solid transparent; 
+    }
+    50% {
+        border-left: 3px solid aquamarine; 
+    }
+}
+
+/* Words Changing Animation */
+@keyframes words {
+    0%, 25% {
+        content: "Student";
+    }
+    26%, 50% {
+        content: "Developer";
+    }
+    51%, 75% {
+        content: "Gamer";
+    }
+    76%, 100% {
+        content: "Listener";
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 28px; 
+    }
+}
+.container{
+	position:relative;
+	top: 0;
+	display: flex;
+	justify-content: center;
+    background-image: url("seec.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center; 
+    
+}
+.card{
+	background: transparent;
+	width: 300px;
+	height: 450px;
+	margin: 30px;
+    box-shadow: 0 4px 6px rgb(0, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+}
+
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.card-image {
+    height: 300px;
+    background-color: #ccc; 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #e8e8e8;
+}
+
+p {
+    color: #f9f9f9;
+    padding: 0 10px 20px;
+}
+.list{
+    position:relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("seec.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center; 
+    
+}
+.hi{
+    
+	background: transparent;
+	width: 300px;
+	height: 400px;
+	margin: 30px;
+    box-shadow: 0 14px 30px rgb(0, 183, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+
+}
+.hi:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 12px rgba(255, 254, 254, 0.2); 
+}
+.card-imag {
+    
+    height: 300px;
+    background-color: #ccc; 
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pic1{
+    background-image: url(R.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+.pic2{
+    background-image: url(html.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.pic3{
+    background-image: url(css.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+.pic4{
+    background-image: url(GS2.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.proj{
+    background-image: url(GYMBO/GYMBO/assets/GYMBO.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}

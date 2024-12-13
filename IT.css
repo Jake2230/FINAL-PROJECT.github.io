@@ -1,0 +1,88 @@
+html {
+	background-color:lightblue; 
+	scroll-behavior: smooth;
+}
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding: 10;
+	box-sizing: border-box;
+	font-family: times new roman;
+	text-decoration: none;
+	list-style: none;
+	font-size: 30;
+}
+h1{
+ color: white;
+}
+h3{
+ color:white;
+}
+#section1 {
+	height: 600px;
+	background-color: red;
+
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 35px 2%;
+	background: rgba(0,10,60,60);
+	backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index:100;
+}
+
+.container{
+	position:relative;
+	top: 150px;
+	display: flex;
+	justify-content: center;
+}
+.card{
+	background: white;
+	width: 220px;
+	height: 400px;
+	margin: 30px;
+
+}
+.card-image{
+	background-color:bisque;
+	height:100px;
+	margin-bottom: 20px;
+}
+
+.home-img{
+	border-radius: 50%;
+
+}
+.home-img img{
+	position: relative;
+	width: 32vh;
+	border-radius:50;
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem; /* Adjust padding for size */
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Font size */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline */
+    border: none; /* No border */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 114, 255, 0.3); /* Add a shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Slightly enlarge the button */
+    box-shadow: 0 12px 20px rgba(0, 114, 255, 0.5); /* Enhance shadow on hover */
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reverse gradient */
+}
+
+}
